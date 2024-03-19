@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #001affc2;
+    background-color: #0e0e0f33;
     height: 100vh;
 }
 
@@ -49,6 +49,10 @@ button:hover,
 form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #ff7300;
     transform: scale(1.05);
+}
+
+.logo-img {
+    height: 250px;
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -207,7 +211,7 @@ section.sobre .flex {
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #0000001d;
 }
 
 section.portfolio .flex {
@@ -324,10 +328,6 @@ footer .line-footer p i {
 
 footer .line-footer p a {
     color: #fff;
-}
-
-.logo>img {
-    height: 100%;
 }
 
 @media screen and (max-width: 1020px) {
