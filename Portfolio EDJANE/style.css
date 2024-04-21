@@ -6,9 +6,53 @@
     font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --background: #05939bfa;
+    --background-button: #039dda;
+}
+
 body {
-    background-color: #0e0e0f33;
+    background-color: var(--background);
     height: 100vh;
+    overflow-x: hidden;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.25s;
+    visibility: hidden;
+}
+
+.hidden-img {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.25s;
+    visibility: hidden;
+}
+
+.contain-card:has(:hover) {
+    .especialidades-box:hover {
+        transform: scale(1.1);
+    }
+
+    .especialidades-box:not(:hover) {
+        opacity: 0.5;
+    }
+}
+
+.hidden-text {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.25s;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.25s;
+    visibility: visible;
 }
 
 .interface {
@@ -24,7 +68,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #ff7300;
+    background-color: var(--background-button);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -42,12 +86,12 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #ff7300;
+    color: #03DAC6;
 }
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #ff7300;
+    box-shadow: 0px 0px 8px #03DAC6;
     transform: scale(1.05);
 }
 
@@ -71,13 +115,13 @@ header>.interface {
 }
 
 header a {
-    color: #5c5c5c;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
 }
 
 header a:hover {
-    color: #fff;
+    color: #b8b8b8;
     transform: scale(1.05);
     transition: .2s;
 }
@@ -109,7 +153,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #ff7300;
+    color: #03DAC6;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -157,7 +201,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box i {
     font-size: 70px;
-    color: #ff7300;
+    color: #915916;
 }
 
 .especialidades .especialidades-box h3 {
@@ -186,7 +230,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #ff7300;
+    color: #915916;
     display: block;
 }
 
@@ -205,7 +249,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00FF08;
+    background-color: #03DAC6;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -299,7 +343,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 150px;
-    background-color: #00FF08;
+    background-color: #03DAC6;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -322,11 +366,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #00FF08;
+    border-top: 2px solid #03DAC6;
 }
 
 footer .line-footer p i {
-    color: #00FF08;
+    color: #03DAC6;
     font-size: 22px;
 }
 
